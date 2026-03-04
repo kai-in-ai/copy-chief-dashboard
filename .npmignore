@@ -1,0 +1,7 @@
+dashboard/node_modules/
+dashboard/out/
+dashboard/.next/
+dashboard/tsconfig.tsbuildinfo
+*.db
+*.db-shm
+*.db-wal

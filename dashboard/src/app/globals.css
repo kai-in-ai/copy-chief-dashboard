@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+/* =============================================================================
+   COPY CHIEF DASHBOARD - DESIGN TOKENS v2.0
+   Tech Refined Gold theme (adapted from AIOS Dashboard)
+   ============================================================================= */
+
+:root {
+  /* ---------------------------------------------------------------------------
+     HUD CORE TOKENS - Gold accent system
+     --------------------------------------------------------------------------- */
+  --hud-bg: #000000;
+  --hud-surface: #0a0a0f;
+  --hud-surface-hover: #0f0f14;
+  --hud-overlay: #111116;
+  --hud-border: rgba(201, 178, 152, 0.12);
+  --hud-border-subtle: rgba(255, 255, 255, 0.04);
+  --hud-border-medium: rgba(255, 255, 255, 0.10);
+  --hud-accent: #C9B298;
+  --hud-accent-light: #E4D8CA;
+  --hud-accent-dim: rgba(201, 178, 152, 0.25);
+  --hud-accent-bg: rgba(201, 178, 152, 0.08);
+  --hud-accent-bg-hover: rgba(201, 178, 152, 0.12);
+  --hud-gold: #C9B298;
+  --hud-green: #4ADE80;
+  --hud-red: #F87171;
+  --hud-yellow: #FBBF24;
+  --hud-text: #FAFAF8;
+  --hud-text-dim: #8A8A7F;
+  --hud-text-muted: #5A5A50;
+  --hud-text-disabled: #3A3A32;
+
+  /* ---------------------------------------------------------------------------
+     COPY SQUAD PERSONAS - 10 personas (color + bg + border)
+     --------------------------------------------------------------------------- */
+  --persona-chief: #C9B298;
+  --persona-chief-bg: rgba(201, 178, 152, 0.10);
+  --persona-chief-border: rgba(201, 178, 152, 0.30);
+
+  --persona-researcher: #06b6d4;
+  --persona-researcher-bg: rgba(6, 182, 212, 0.10);
+  --persona-researcher-border: rgba(6, 182, 212, 0.30);
+
+  --persona-briefer: #8b5cf6;
+  --persona-briefer-bg: rgba(139, 92, 246, 0.10);
+  --persona-briefer-border: rgba(139, 92, 246, 0.30);
+
+  --persona-producer: #ef4444;
+  --persona-producer-bg: rgba(239, 68, 68, 0.10);
+  --persona-producer-border: rgba(239, 68, 68, 0.30);
+
+  --persona-critic: #eab308;
+  --persona-critic-bg: rgba(234, 179, 8, 0.10);
+  --persona-critic-border: rgba(234, 179, 8, 0.30);
+
+  --persona-creative: #f97316;
+  --persona-creative-bg: rgba(249, 115, 22, 0.10);
+  --persona-creative-border: rgba(249, 115, 22, 0.30);
+
+  --persona-lp: #3b82f6;
+  --persona-lp-bg: rgba(59, 130, 246, 0.10);
+  --persona-lp-border: rgba(59, 130, 246, 0.30);
+
+  --persona-vsl: #ec4899;
+  --persona-vsl-bg: rgba(236, 72, 153, 0.10);
+  --persona-vsl-border: rgba(236, 72, 153, 0.30);
+
+  --persona-miner: #22c55e;
+  --persona-miner-bg: rgba(34, 197, 94, 0.10);
+  --persona-miner-border: rgba(34, 197, 94, 0.30);
+
+  --persona-gatekeeper: #f43f5e;
+  --persona-gatekeeper-bg: rgba(244, 63, 94, 0.10);
+  --persona-gatekeeper-border: rgba(244, 63, 94, 0.30);
+
+  /* ---------------------------------------------------------------------------
+     STATUS SYSTEM
+     --------------------------------------------------------------------------- */
+  --status-success: #4ADE80;
+  --status-success-bg: rgba(74, 222, 128, 0.1);
+  --status-success-border: rgba(74, 222, 128, 0.2);
+
+  --status-warning: #FBBF24;
+  --status-warning-bg: rgba(251, 191, 36, 0.1);
+  --status-warning-border: rgba(251, 191, 36, 0.2);
+
+  --status-error: #F87171;
+  --status-error-bg: rgba(248, 113, 113, 0.1);
+  --status-error-border: rgba(248, 113, 113, 0.2);
+
+  --status-info: #60A5FA;
+  --status-info-bg: rgba(96, 165, 250, 0.1);
+  --status-info-border: rgba(96, 165, 250, 0.2);
+
+  --status-idle: #4A4A42;
+  --status-idle-bg: rgba(74, 74, 66, 0.1);
+  --status-idle-border: rgba(74, 74, 66, 0.2);
+
+  /* ---------------------------------------------------------------------------
+     PHASE SYSTEM (Copy Chief pipeline phases)
+     --------------------------------------------------------------------------- */
+  --phase-idle: #4A4A42;
+  --phase-research: #06b6d4;
+  --phase-briefing: #8b5cf6;
+  --phase-production: #C9B298;
+  --phase-delivered: #4ADE80;
+
+  --phase-idle-bg: rgba(74, 74, 66, 0.10);
+  --phase-research-bg: rgba(6, 182, 212, 0.10);
+  --phase-briefing-bg: rgba(139, 92, 246, 0.10);
+  --phase-production-bg: rgba(201, 178, 152, 0.10);
+  --phase-delivered-bg: rgba(74, 222, 128, 0.10);
+
+  /* ---------------------------------------------------------------------------
+     ANIMATION TOKENS
+     --------------------------------------------------------------------------- */
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+
+  /* ---------------------------------------------------------------------------
+     GOLD ACCENT EXTENDED
+     --------------------------------------------------------------------------- */
+  --border-gold: rgba(201, 178, 152, 0.25);
+  --border-gold-strong: rgba(201, 178, 152, 0.5);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--hud-bg);
+  color: var(--hud-text);
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =============================================================================
+   SCROLLBAR
+   ============================================================================= */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--hud-bg); }
+::-webkit-scrollbar-thumb { background: var(--hud-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--hud-accent-dim); }
+
+/* =============================================================================
+   ANIMATIONS
+   ============================================================================= */
+@keyframes hud-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.hud-pulse {
+  animation: hud-pulse 2s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+.skeleton {
+  animation: skeleton-pulse 1.5s var(--ease-luxury) infinite;
+  background: var(--hud-border);
+}
+
+/* =============================================================================
+   UTILITY CLASSES - Tech Refined
+   ============================================================================= */
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform var(--duration-normal) var(--ease-luxury),
+              box-shadow var(--duration-normal) var(--ease-luxury),
+              border-color var(--duration-normal) var(--ease-luxury);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Card refined */
+.card-refined {
+  background: var(--hud-surface);
+  border: 1px solid var(--hud-border);
+  transition: all var(--duration-normal) var(--ease-luxury);
+}
+
+.card-refined:hover {
+  background: var(--hud-surface-hover);
+  border-color: var(--hud-border-medium);
+  transform: translateY(-1px);
+}
+
+/* Gold accent utilities */
+.hover-gold:hover {
+  border-color: var(--border-gold);
+}
+
+.hover-gold-strong:hover {
+  border-color: var(--border-gold-strong);
+  box-shadow: 0 0 20px rgba(201, 178, 152, 0.1);
+}
+
+/* Gold gradient line */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--hud-accent-dim) 20%,
+    var(--border-gold-strong) 50%,
+    var(--hud-accent-dim) 80%,
+    transparent 100%
+  );
+}
+
+/* Text gradient - gold shimmer */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--hud-accent) 0%, var(--hud-accent-light) 50%, var(--hud-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Transition utilities */
+.transition-luxury {
+  transition: all var(--duration-normal) var(--ease-luxury);
+}
+
+.transition-fast {
+  transition: all var(--duration-fast) var(--ease-luxury);
+}
+
+/* Status dot */
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-dot-glow {
+  box-shadow: 0 0 8px currentColor;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hover-lift:hover { transform: none; }
+}
