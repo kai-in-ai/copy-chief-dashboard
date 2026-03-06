@@ -1,6 +1,6 @@
 {
   "name": "@lucapimenta/copy-chief-dashboard",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Copy Chief BLACK — Dashboard (Next.js)",
   "bin": {
     "copy-chief-dashboard": "bin/cli.js"

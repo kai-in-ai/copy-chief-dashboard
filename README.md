@@ -28,7 +28,7 @@ npx @lucapimenta/copy-chief-dashboard install
 - **Kanban Board** — Drag-and-drop de tarefas por fase
 - **HELIX Viewer** — Visualiza as 10 fases do briefing HELIX
 - **War Room** — Monitoramento em tempo real de agents ativos
-- **Agent Activity** — Timeline de atividade dos 12 agentes
+- **Agent Activity** — Timeline de atividade dos 13 agentes
 - **Quality Gates** — Status dos gates MCP
 - **Offer Overview** — Dashboard por oferta
 - **Squad Panel** — Visao geral da Copy Squad
@@ -92,7 +92,7 @@ npm run build && npm start
 
 ## Requisitos
 
-- Copy Chief BLACK instalado (`npx @lucapimenta/copy-chief-black install`)
+- Copy Chief BLACK v2.0+ instalado (`npx @lucapimenta/copy-chief-black install`)
 - Node.js >= 18
 
 ## Pacotes Relacionados
