@@ -1,5 +1,7 @@
 node_modules/
 .next/
+out/
+.vercel/
 *.tgz
 .DS_Store
 Thumbs.db
