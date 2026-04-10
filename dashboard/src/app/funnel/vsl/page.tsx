@@ -65,7 +65,7 @@ You apply it three times a day. At breakfast. At lunch. At dinner. Your natural 
 
 Within four hours, hunger signals start dropping by 40%.
 
-Meanwhile, your metabolism is getting a boost with Green Coffee Bean, Garcinia Cambogia, and L-Carnitine.
+Meanwhile, your metabolism is getting a boost with Berberine, Red Moro Orange Extract, and Saffron.
 
 So you're eating less because you're not *hungry*.
 
